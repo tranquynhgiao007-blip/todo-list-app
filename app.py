@@ -14,3 +14,8 @@ add_task("Làm bài tập thực hành ở nhà")
         tasks[task_index]['completed'] = True
         return True
     return False
+def delete_task(task_index):
+    if 0 <= task_index < len(tasks):
+        removed_task = tasks.pop(task_index)
+        return True
+    return False
